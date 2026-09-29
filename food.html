@@ -1,7 +1,7 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Grat dinner</title>
+  <title>Great Dinner</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,66 +19,165 @@
 
 <body>
 
-    <h1>Dinner time by Adam</h1>
+  <h1>Dinner time by Adam</h1>
 
-    <div class="container">
+  <!-- Dropdown menu -->
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      My Pages
+    </button>
 
-        <!-- row for letters -->
-        <div class="row">
-            <div class="col-sm-2">B</div>
-            <div class="col-sm-2">A</div>
-            <div class="col-sm-2">R</div>
-            <div class="col-sm-2">T</div>
-            <div class="col-sm-2">O</div>
-            <div class="col-sm-2">U</div>
-            <div class="col-sm-2">T</div>
-        </div>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="first.html">First Page</a></li>
+      <li><a class="dropdown-item" href="second.html">Second Page</a></li>
+    </ul>
+  </div>
 
-        <!-- row for foods -->
-        <div class="row">
-            <div class="col-md">Burgers</div>
-            <div class="col-md">Apples</div>
-            <div class="col-md">Ramen</div>
-            <div class="col-md">Tacos</div>
-            <div class="col-md">Oats</div>
-            <div class="col-md">Udon</div>
-            <div class="col-md">Turkey</div>
-        </div>
+  <div class="container">
 
+    <!-- row for letters -->
+    <div class="row">
+      <div class="col-sm-2">B</div>
+      <div class="col-sm-2">A</div>
+      <div class="col-sm-2">R</div>
+      <div class="col-sm-2">T</div>
+      <div class="col-sm-2">O</div>
+      <div class="col-sm-2">U</div>
+      <div class="col-sm-2">T</div>
     </div>
 
-    <p>
-        The row that broke first for me was the letters row, the last letter which was T moved to the next line. 
-        But as I kept making the browser smaller, the food row broke apart. I think this explained because the 
-        letters row used a small column <code>col-sm-2</code>, but the foods used a medium sized ones with 
-        medium breakpoints <code>col-md</code>
-    </p>
+    <!-- row for foods -->
+    <div class="row">
+      <div class="col-md">Burgers</div>
+      <div class="col-md">Apples</div>
+      <div class="col-md">Ramen</div>
+      <div class="col-md">Tacos</div>
+      <div class="col-md">Oats</div>
+      <div class="col-md">Udon</div>
+      <div class="col-md">Turkey</div>
+    </div>
 
-    <!-- First container: responsive images -->
-    <!-- First container: responsive images -->
+  </div>
+
+  <p>
+    The row that broke first for me was the letters row, the last letter which was T moved to the next line. 
+    But as I kept making the browser smaller, the food row broke apart. I think this explained because the 
+    letters row used a small column <code>col-sm-2</code>, but the foods used a medium sized ones with 
+    medium breakpoints <code>col-md</code>
+  </p>
+
+  <!-- First container: responsive images -->
   <div class="container">
-      <img src="Burgers.jpg" class="img-fluid" width="450" height="450"
-          style="object-fit: cover;" alt="Burgers">
+    <img src="Burgers.jpg" class="img-fluid" width="450" height="450"
+      style="object-fit: cover;" alt="Burgers">
 
-      <img src="Tacos.jpg" class="img-fluid" width="450" height="450"
-          style="object-fit: cover;" alt="Tacos">
+    <img src="Tacos.jpg" class="img-fluid" width="450" height="450"
+      style="object-fit: cover;" alt="Tacos">
 
-      <img src="Apples.jpg" class="img-fluid" width="450" height="450"
-          style="object-fit: cover;" alt="Apples">
+    <img src="Apples.jpg" class="img-fluid" width="450" height="450"
+      style="object-fit: cover;" alt="Apples">
   </div>
 
   <!-- Second container: thumbnails -->
   <div class="container mt-4">
-      <img src="Burgers.jpg" class="img-thumbnail" width="150" height="150"
-          style="object-fit: cover;" alt="Burgers">
+    <img src="Burgers.jpg" class="img-thumbnail" width="150" height="150"
+      style="object-fit: cover;" alt="Burgers">
 
-      <img src="Tacos.jpg" class="img-thumbnail" width="150" height="150"
-          style="object-fit: cover;" alt="Tacos">
+    <img src="Tacos.jpg" class="img-thumbnail" width="150" height="150"
+      style="object-fit: cover;" alt="Tacos">
 
-      <img src="Apples.jpg" class="img-thumbnail" width="150" height="150"
-          style="object-fit: cover;" alt="Apples">
+    <img src="Apples.jpg" class="img-thumbnail" width="150" height="150"
+      style="object-fit: cover;" alt="Apples">
+  </div>
+
+  <table class="table table-striped table-hover table-bordered">
+
+    <caption>Foods, Games, and Songs</caption>
+
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Letter</th>
+        <th scope="col">Food</th>
+        <th scope="col">Game</th>
+        <th scope="col">Song</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">B</th>
+        <td>Burgers</td>
+        <td>Baseball</td>
+        <td>Bad Guy</td>
+      </tr>
+
+      <tr>
+        <th scope="row">A</th>
+        <td>Apples</td>
+        <td>Among Us</td>
+        <td>Animals</td>
+      </tr>
+
+      <tr>
+        <th scope="row">R</th>
+        <td>Ramen</td>
+        <td>Roblox</td>
+        <td>Roar</td>
+      </tr>
+
+      <tr>
+        <th scope="row">T</th>
+        <td>Tacos</td>
+        <td>Tetris</td>
+        <td>Thunder</td>
+      </tr>
+
+      <tr>
+        <th scope="row">O</th>
+        <td>Oats</td>
+        <td>Overwatch</td>
+        <td>One</td>
+      </tr>
+
+      <tr>
+        <th scope="row">U</th>
+        <td>Udon</td>
+        <td>Uno</td>
+        <td>Umbrella</td>
+      </tr>
+
+      <tr>
+        <th scope="row">T</th>
+        <td>Turkey</td>
+        <td>Terraria</td>
+        <td>Thriller</td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  <div class="container">
+
+    <div class="btn-toolbar" role="toolbar" aria-label="Food letter toolbar">
+
+      <div class="btn-group" role="group" aria-label="Letters with images">
+        <button type="button" class="btn btn-success">B</button>
+        <button type="button" class="btn btn-success">A</button>
+        <button type="button" class="btn btn-success">T</button>
+      </div>
+
+      <div class="btn-group" role="group" aria-label="Other letters">
+        <button type="button" class="btn btn-warning">R</button>
+        <button type="button" class="btn btn-warning">O</button>
+      </div>
+
+      <div class="btn-group" role="group" aria-label="Remaining letter">
+        <button type="button" class="btn btn-danger">U</button>
+      </div>
+
+    </div>
+
   </div>
 
 </body>
-
 </html>
