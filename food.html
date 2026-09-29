@@ -5,15 +5,19 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" 
-    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+    integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+    crossorigin="anonymous"></script>
 
 </head>
 
@@ -23,41 +27,63 @@
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <a class="navbar-brand" href="food.html">Food options</a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#foodNavbar"
-      aria-controls="foodNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#foodNavbar"
+      aria-controls="foodNavbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="foodNavbar">
       <ul class="navbar-nav mr-auto">
+
         <li class="nav-link active">
           <a class="nav-link" href="first.html">First</a>
         </li>
+
         <li class="nav-link active">
           <a class="nav-link" href="second.html">Second</a>
         </li>
+
       </ul>
     </div>
   </nav>
 
+
   <h1>Dinner time by Adam</h1>
+
 
   <!-- Dropdown menu -->
   <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="btn btn-primary dropdown-toggle"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false">
+
       My Pages
     </button>
 
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="first.html">First Page</a></li>
-      <li><a class="dropdown-item" href="second.html">Second Page</a></li>
+      <li>
+        <a class="dropdown-item" href="first.html">First Page</a>
+      </li>
+
+      <li>
+        <a class="dropdown-item" href="second.html">Second Page</a>
+      </li>
     </ul>
   </div>
 
+
+  <!-- Letters and foods -->
   <div class="container">
 
     <!-- row for letters -->
     <div class="row">
+
       <div class="col-sm-2">B</div>
       <div class="col-sm-2">A</div>
       <div class="col-sm-2">R</div>
@@ -65,10 +91,13 @@
       <div class="col-sm-2">O</div>
       <div class="col-sm-2">U</div>
       <div class="col-sm-2">T</div>
+
     </div>
+
 
     <!-- row for foods -->
     <div class="row">
+
       <div class="col-md">Burgers</div>
       <div class="col-md">Apples</div>
       <div class="col-md">Ramen</div>
@@ -76,40 +105,166 @@
       <div class="col-md">Oats</div>
       <div class="col-md">Udon</div>
       <div class="col-md">Turkey</div>
+
     </div>
 
   </div>
 
+
   <p>
-    The row that broke first for me was the letters row, the last letter which was T moved to the next line. 
-    But as I kept making the browser smaller, the food row broke apart. I think this explained because the 
-    letters row used a small column <code>col-sm-2</code>, but the foods used a medium sized ones with 
+    The row that broke first for me was the letters row, the last letter which was T moved to the next line.
+    But as I kept making the browser smaller, the food row broke apart. I think this explained because the
+    letters row used a small column <code>col-sm-2</code>, but the foods used a medium sized ones with
     medium breakpoints <code>col-md</code>
   </p>
 
+
   <!-- First container: responsive images -->
   <div class="container">
-    <img src="Burgers.jpg" class="img-fluid" width="450" height="450"
-      style="object-fit: cover;" alt="Burgers">
 
-    <img src="Tacos.jpg" class="img-fluid" width="450" height="450"
-      style="object-fit: cover;" alt="Tacos">
+    <img src="Burgers.jpg"
+      class="img-fluid"
+      width="450"
+      height="450"
+      style="object-fit: cover;"
+      alt="Burgers">
 
-    <img src="Apples.jpg" class="img-fluid" width="450" height="450"
-      style="object-fit: cover;" alt="Apples">
+    <img src="Tacos.jpg"
+      class="img-fluid"
+      width="450"
+      height="450"
+      style="object-fit: cover;"
+      alt="Tacos">
+
+    <img src="Apples.jpg"
+      class="img-fluid"
+      width="450"
+      height="450"
+      style="object-fit: cover;"
+      alt="Apples">
+
   </div>
+
 
   <!-- Second container: thumbnails -->
   <div class="container mt-4">
-    <img src="Burgers.jpg" class="img-thumbnail" width="150" height="150"
-      style="object-fit: cover;" alt="Burgers">
 
-    <img src="Tacos.jpg" class="img-thumbnail" width="150" height="150"
-      style="object-fit: cover;" alt="Tacos">
+    <img src="Burgers.jpg"
+      class="img-thumbnail"
+      width="150"
+      height="150"
+      style="object-fit: cover;"
+      alt="Burgers">
 
-    <img src="Apples.jpg" class="img-thumbnail" width="150" height="150"
-      style="object-fit: cover;" alt="Apples">
+    <img src="Tacos.jpg"
+      class="img-thumbnail"
+      width="150"
+      height="150"
+      style="object-fit: cover;"
+      alt="Tacos">
+
+    <img src="Apples.jpg"
+      class="img-thumbnail"
+      width="150"
+      height="150"
+      style="object-fit: cover;"
+      alt="Apples">
+
   </div>
+
+
+  <!-- Food Cards -->
+  <div class="container mt-4">
+
+    <div class="row">
+
+      <!-- Burger Card -->
+        <div class="col-md-4 mb-4">
+        <div class="card">
+
+            <img src="Burgers.jpg"
+            class="card-img-top"
+            alt="Burgers">
+
+            <div class="card-body">
+            <h5 class="card-title">Burgers</h5>
+
+            <p class="card-text">
+                Burgers are a popular meal made with a seasoned patty
+                served inside a bun with toppings such as lettuce,
+                tomato, and cheese.
+            </p>
+
+            <a href="https://www.mcdonalds.com/"
+                class="btn btn-primary"
+                target="_blank">
+                Learn More
+            </a>
+            </div>
+
+        </div>
+        </div>
+
+
+        <!-- Tacos Card -->
+        <div class="col-md-4 mb-4">
+        <div class="card">
+
+            <img src="Tacos.jpg"
+            class="card-img-top"
+            alt="Tacos">
+
+            <div class="card-body">
+            <h5 class="card-title">Tacos</h5>
+
+            <p class="card-text">
+                Tacos are a Mexican dish made with a tortilla filled
+                with ingredients such as meat, vegetables, cheese,
+                and salsa.
+            </p>
+
+            <a href="https://www.tacobell.com/"
+                class="btn btn-primary"
+                target="_blank">
+                Learn More
+            </a>
+            </div>
+
+        </div>
+        </div>
+
+
+        <!-- Apples Card -->
+        <div class="col-md-4 mb-4">
+        <div class="card">
+
+            <img src="Apples.jpg"
+            class="card-img-top"
+            alt="Apples">
+
+            <div class="card-body">
+            <h5 class="card-title">Apples</h5>
+
+            <p class="card-text">
+                Apples are a popular fruit that can be eaten fresh
+                or used in foods such as pies, sauces, and salads.
+            </p>
+
+            <a href="https://www.usda.gov/"
+                class="btn btn-primary"
+                target="_blank">
+                Learn More
+            </a>
+            </div>
+
+        </div>
+        </div>
+
+
+    </div>
+
+  </div>
+
 
   <!-- Food table -->
   <table class="table table-striped table-hover table-bordered">
@@ -117,15 +272,19 @@
     <caption>Foods, Games, and Songs</caption>
 
     <thead class="table-dark">
+
       <tr>
         <th scope="col">Letter</th>
         <th scope="col">Food</th>
         <th scope="col">Game</th>
         <th scope="col">Song</th>
       </tr>
+
     </thead>
 
+
     <tbody>
+
       <tr>
         <th scope="row">B</th>
         <td>Burgers</td>
@@ -174,52 +333,105 @@
         <td>Terraria</td>
         <td>Thriller</td>
       </tr>
+
     </tbody>
 
   </table>
 
+
   <!-- Button toolbar -->
   <div class="container">
 
-    <div class="btn-toolbar" role="toolbar" aria-label="Food letter toolbar">
+    <div class="btn-toolbar"
+      role="toolbar"
+      aria-label="Food letter toolbar">
 
-      <div class="btn-group" role="group" aria-label="Letters with images">
+
+      <div class="btn-group"
+        role="group"
+        aria-label="Letters with images">
+
         <button type="button" class="btn btn-success">B</button>
         <button type="button" class="btn btn-success">A</button>
         <button type="button" class="btn btn-success">T</button>
+
       </div>
 
-      <div class="btn-group" role="group" aria-label="Other letters">
+
+      <div class="btn-group"
+        role="group"
+        aria-label="Other letters">
+
         <button type="button" class="btn btn-warning">R</button>
         <button type="button" class="btn btn-warning">O</button>
+
       </div>
 
-      <div class="btn-group" role="group" aria-label="Remaining letter">
+
+      <div class="btn-group"
+        role="group"
+        aria-label="Remaining letter">
+
         <button type="button" class="btn btn-danger">U</button>
+
       </div>
 
     </div>
 
   </div>
+
+
+  <!-- Form -->
   <form>
-    <div class="form-group">
-        <label for="email">Email address</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-    </div>
 
     <div class="form-group">
-        <label for="food">FOOD</label>
-        <input type="text" class="form-control" id="food" placeholder="Enter your food">
+
+      <label for="email">Email address</label>
+
+      <input type="email"
+        class="form-control"
+        id="email"
+        placeholder="Enter email">
+
+      <small id="emailHelp"
+        class="form-text text-muted">
+        We'll never share your email with anyone else.
+      </small>
+
     </div>
+
+
+    <div class="form-group">
+
+      <label for="food">FOOD</label>
+
+      <input type="text"
+        class="form-control"
+        id="food"
+        placeholder="Enter your food">
+
+    </div>
+
 
     <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="foodTour">
-        <label class="form-check-label" for="foodTour">Sign up for food tour information?</label>
+
+      <input type="checkbox"
+        class="form-check-input"
+        id="foodTour">
+
+      <label class="form-check-label" for="foodTour">
+        Sign up for food tour information?
+      </label>
+
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+
+    <button type="submit"
+      class="btn btn-primary">
+      Submit
+    </button>
+
+  </form>
 
 
 </body>
